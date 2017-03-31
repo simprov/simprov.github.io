@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dc.js - US Venture Capital Landscape 2011</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/dc.min.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <h2>US Venture Capital Landscape 2011</h2>
+
+    <div id="us-chart">
+        <strong>VC Distribution by States (color: total amount raised)</strong>
+        <a class="reset" href="javascript:usChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+        <span class="reset" style="display: none;"> | Current filter: <span class="filter"></span></span>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="industry-chart">
+        <strong>By Industries</strong> (y: number of deals, x: total amount raised in millions, radius: amount raised)
+        <a class="reset" href="javascript:industryChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="round-chart">
+        <strong>By Rounds</strong> (y: number of deals, x: total amount raised in millions, radius: amount raised)
+        <a class="reset" href="javascript:roundChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div>
+        <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="controls"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/crossfilter.js"></script>
+<script type="text/javascript" src="js/dc.js"></script>
+<script type="text/javascript" src="js/stock.js"></script>
+
+<!-- SIMProv -->
+<script type="text/javascript" src="../lib/SIMProv.core.js"></script>
+<script type="text/javascript" src="../lib/SIMProv.ui.js"></script>
+<link rel="stylesheet" href="../lib/SIMProv.ui.css" media="all" charset="utf-8"/>
+
+<!-- Provenance -->
+<!--<script type="text/javascript" src="js/provenance.js"></script>-->
+<script type="text/javascript" src="js/dc-simprov.js"></script>
+<script type="text/javascript" src="js/provenance-config.js"></script>
+
+</body>
+</html>
