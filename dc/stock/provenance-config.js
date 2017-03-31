@@ -10,4 +10,4 @@ let rangeCharts = [
     {id: 6, label: "YearRange", divId: "monthly-volume-chart"}
 ];
 
-setupSimprov(normalCharts, rangeCharts);
+setupSimprov(normalCharts, rangeCharts, {divId: '#selectiveviz'});
