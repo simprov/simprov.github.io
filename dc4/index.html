@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <title>dc.js - Dimensional Charting Javascript Library</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/lib/css/dc.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="stylesheet" href="../lib/SIMProv.ui.css" media="all" charset="utf-8"/>
+    <style type="text/css">
+        #wholeviz {
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" id="captureThumb">
+
+    <div id="wholeviz">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="returns-chart" class="dc-chart">
+                    <strong>Strategy Returns Through Time</strong>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div id="average-returns">
+                    <strong>Strategy Average Return</strong>
+                    <!--<a class="reset" href="javascript:gainOrLossChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="int-rate-chart">
+                    <strong>Loan Grade</strong>
+                    <!--<a class="reset" href="javascript:quarterChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="newly-issued">
+                    <strong>Corresponding Supply (2014)</strong>
+                    <!--<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <div id="delinq-2yrs-chart">
+                    <strong>Delinquencies</strong>
+                    <!--<a class="reset" href="javascript:gainOrLossChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="emp-length-chart">
+                    <strong>Employment</strong>
+                    <!--<a class="reset" href="javascript:quarterChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="home-ownership-chart">
+                    <strong>Home Ownership</strong>
+                    <!--<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="inq-last-6mths-chart">
+                    <strong>Credit Inquiries</strong>
+                    <!--<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div id="annual-inc-chart">
+                    <strong>Annual Income</strong>
+                    <!--<a class="reset" href="javascript:gainOrLossChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="pub-rec-chart">
+                    <strong>Public Records</strong>
+                    <!--<a class="reset" href="javascript:quarterChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="purpose-chart">
+                    <strong>Loan Purpose</strong>
+                    <!--<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="term-chart">
+                    <strong>Loan Term</strong>
+                    <!--<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+        <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="controls"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="static/lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/lib/js/crossfilter.js"></script>
+<script type="text/javascript" src="static/lib/js/d3.min.js"></script>
+<script type="text/javascript" src="static/lib/js/dc.min.js"></script>
+<script type="text/javascript" src="static/lib/js/queue.js"></script>
+<script type="text/javascript" src="static/js/graphs.js"></script>
+
+<!-- SIMProv -->
+<script type="text/javascript" src="../lib/SIMProv.core.js"></script>
+<script type="text/javascript" src="../lib/SIMProv.ui.js"></script>
+
+
+<!-- Provenance -->
+<!--<script type="text/javascript" src="static/js/provenance.js"></script>-->
+<script type="text/javascript" src="static/js/dc-simprov.js"></script>
+<script type="text/javascript" src="static/js/provenance-config.js"></script>
+
+</body>
+</html>

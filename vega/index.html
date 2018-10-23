@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Vega Scaffold</title>
+    <script src="js/d3.min.js"></script>
+    <!-- <script src="https://vega.github.io/vega-editor/vendor/d3.geo.projection.min.js"></script>
+    <script src="https://vega.github.io/vega-editor/vendor/topojson.js"></script>
+    <script src="https://vega.github.io/vega-editor/vendor/d3.layout.cloud.js"></script> -->
+    <script src="js/vega.min.js" charset="utf-8"></script>
+    <script src="js/vega-embed.min.js" charset="utf-8"></script>
+    <script src="../lib/SIMProv.core.js"></script>
+    <script src="../lib/SIMProv.ui.js"></script>
+    <link rel="stylesheet" href="../lib/SIMProv.ui.css" charset="utf-8"/>
+    <script src="js/provenance.js"></script>
+    <style>
+      .vega-param-name { font-weight: bold; }
+      .vega-param-name::after { content: ":   "; padding-right: 5px; }
+      .vega-param-radio label { padding-right: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="vis"></div>
+    <div id="controls"></div>
+  </body>
+<script type="text/javascript">
+// parse a spec and create a visualization view
+function parse(opt) {
+  vg.embed("#vis", opt, function(error, retval) {
+    console.log(retval.spec.signals);
+    createProvenance(retval.view);
+  });
+}
+parse("specs/reorder_matrix_small.json");
+// parse("specs/reorder_matrix.json");
+</script>
+</html>
