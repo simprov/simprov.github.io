@@ -17,6 +17,10 @@ h1 {
   font-size: 50px;
 }
 
+div .add-border {
+    padding: 1px;
+}
+
 pre {
   letter-spacing: 0px;
   text-transform: none;
